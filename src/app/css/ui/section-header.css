@@ -1,0 +1,20 @@
+.section-header .text {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.section-header .text:hover::after {
+  content: attr(data-description);
+  padding: 10px;
+  font-size: 14px;
+  width: 75%;
+  background-color: white;
+  border-radius: 5px;
+  right: -50%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
